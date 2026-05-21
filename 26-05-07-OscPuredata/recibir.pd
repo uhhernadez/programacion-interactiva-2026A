@@ -1,0 +1,8 @@
+#N canvas 1199 117 319 389 10;
+#X obj 38 40 udpreceive 10000;
+#X obj 39 68 unpackOSC;
+#X obj 39 95 routeOSC /mensaje;
+#X obj 39 120 print;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
